@@ -1,19 +1,6 @@
 (function ($) {
     "use strict";
 
-    /*function toggleText(id) {
-        var text = document.getElementById(id);
-        if (text.style.display === "none") {
-          text.style.display = "block";
-        } else {
-          text.style.display = "none";
-        }
-      }
-
-    document.getElementById('closeButton').addEventListener('click', function() {
-        toggleText('text1'); // Assuming the ID of your text element is 'text1'
-    });*/
-
     document.addEventListener('click', function(event) {
         var portfolioBtn = document.querySelector('.portfolio-btn');
         var text = document.getElementById('text1');
@@ -78,6 +65,7 @@
         var $videoSrc;
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
+            console.log("Video selected: " + $videoSrc);
         });
         console.log($videoSrc);
 

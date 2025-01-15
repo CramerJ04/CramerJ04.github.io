@@ -10,7 +10,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,7 +25,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-</head>
+
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
+
+    <!-- Video.js JavaScript -->
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+
+    </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
@@ -83,7 +90,8 @@
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Jacob Cramer</h1>
+                    <!-- class="display-3 text-uppercase text-primary mb-4" style="-webkit-text-stroke: 2px #000000;" -->
+                    <h1 style="color: #000000; font-size: 75px">Jacob Cramer</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Web Developer, Coder, Game Designer, Creator</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
@@ -109,7 +117,7 @@
     <div class="container-fluid py-5" id="about">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 3px hsl(210, 14%, 89%);">About</h1>
                 <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
             </div>
             <div class="row align-items-center">
@@ -149,7 +157,7 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Qualifications</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 3px hsl(210, 14%, 89%);">Qualifications</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
             </div>
             <div class="row align-items-center">
@@ -236,7 +244,7 @@
     <div class="container-fluid py-5" id="skill">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Attributes</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 3px #dee2e6;">Attributes</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
             </div>
             <div class="row align-items-center">
@@ -308,7 +316,7 @@
     <div class="container-fluid pt-5" id="service">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Expertise</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 3px #dee2e6;">Expertise</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Specialties</h1>
             </div>
             <div class="row pb-3">
@@ -408,7 +416,7 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 3px #dee2e6;">Gallery</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
             </div>
 
@@ -433,7 +441,6 @@
                 </div>
             </div> -->
 
-
             <style>
                 .text {
                   display: none;
@@ -444,7 +451,7 @@
                   background-color: rgba(255, 255, 255, 0.9);
                   padding: 20px;
                   text-align: center;
-                  z-index: 9999; /* Ensure the text is above other elements */
+                  z-index: 9999;
                 }
               </style>
 
@@ -459,127 +466,116 @@
                 }
             </script>
 
-            <!-- Images and Boxes section -->
+            <!-- Video holder (iFrame) -->
 
-            <!--<div id="text1" class="text"style="display: none; position: absolute; left: 0; top: 0; width: 50%; padding: 20px; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                    Text to display in the middle.
-                </div>
-            -->
-                <!--<div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio" onclick="toggleText('text1')">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div id="text1" class="text left-text" style="display: none;">
-                    Text to display on the left.
-                </div>-->
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="img/videoButton.jpg" id="videoIFRAME" allowscriptaccess="always" allow="autoplay" frameborder="0" style="display: none;"></iframe>
+            </div>
+
+            <!-- Video Loader JS -->
+
+            <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const videoLinks = document.querySelectorAll('.video-link');
+  
+            const iframe = document.getElementById('videoIFRAME');
+
+            // Comment out line below, and add line 12 below to have iframe inital picture turned off
+            iframe.style.display = "block"; // Make the iframe visible
+            //console.log("iframe before: " + iframe.src);
+  
+            videoLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+            event.preventDefault();
+  
+            const videoSrc = link.getAttribute('href');
+            //console.log("Video src: " + videoSrc);
+
+            // other line: 
+            //iframe.style.display = "block";
+  
+            iframe.setAttribute('src', `${videoSrc}?autoplay=1`);
+            //console.log("Video Updated");
+            //console.log("Updated iframe src: "+ iframe.src);
+            });
+            });
+            });
+            </script>
+
+            <!-- Portfolio items -->
 
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/BoxQuestPhoto.jpg" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                            <!-- Text to display in the middle. -->
-                        </div>
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> <!--  onclick="toggleText('text1')" -->
-                            <a href="img/BoxQuest.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 15px; text-decoration: none;">
-                                <span>Box Quest: One of my proudest works. Created a 2D game which requires the user to traverse a factory to place boxes in their corresponding bins. The user encounters various obstacles and puzzles along the way. </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <div class="position-relative overflow-hidden mb-2" style="height: 275px;">
+                      <img class="img-fluid rounded w-100" src="img/BoxQuestPhoto.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
+                      <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                        <a href="img/BoxQuest.mp4" class="fa text-white video-link" style="padding-left: 15px; text-decoration: none;">
+                          <span>Box Quest: One of my proudest works. Created a 2D game which requires the user to traverse a factory to place boxes in their corresponding bins. The user encounters various obstacles and puzzles along the way.</span>
+                        </a>
+                      </div>
+                  </div>
+                  </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/DinoPhoto.jpg" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
+                    <div class="position-relative overflow-hidden mb-2" style="height: 275px;">
+                        <img class="img-fluid rounded w-100" src="img/DinoPhoto.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
-                            <a href="img/Dino.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 15px; text-decoration: none;">
+                            <a href="img/Dino.mp4" class="fa text-white video-link"style="padding-left: 15px; text-decoration: none;">
                                 <span>Dinosaur Run: A work where I created a two stage game, one as a dinosaur and one as a spaceship. The user is required to complete various tasks to complete the level.  </span>
                             </a>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/MazePhoto.jpg" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
+                    <div class="position-relative overflow-hidden mb-2" style="height: 275px;">
+                        <img class="img-fluid rounded w-100" src="img/MazePhoto.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
-                            <a href="img/Maze.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 15px; text-decoration: none;">
+                            <a href="img/Maze.mp4" class="fa text-white video-link"style="padding-left: 15px; text-decoration: none;">
                                 <span>Escape: My first game I created. The user is required to traverse through the level to the goal, encountering various obstacles along the way. </span>
                             </a>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/AccuracyPhoto.jpg" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
+                    <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
+                        <img class="img-fluid rounded w-100" src="img/AccuracyPhoto.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
-                            <a href="img/AccuracyVideo.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 12px; text-decoration: none;">
-                                <span>Accuracy Tester: A work created to test ones accuracy and reaction time. The user can choose how difficult their tests are. Was one of my gamejam projects. </span>
+                            <a href="img/AccuracyVideo.mp4" class="fa text-white video-link"style="padding-left: 12px; text-decoration: none;">
+                                <span>Accuracy Tester: A work created to test ones accuracy and reaction time. The user can choose how difficult their tests are. Was one of my first gamejam projects. </span>
                             </a>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/DoubleDownPic.png" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
+                    <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
+                        <img class="img-fluid rounded w-100" src="img/DoubleDownPic.png" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
-                            <a href="img/DoubleDown.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 12px; text-decoration: none;">
+                            <a href="img/DoubleDown.mp4" class="fa text-white video-link"style="padding-left: 12px; text-decoration: none;">
                                 <span>My proudest work to date. Working with a classmate, I created a Wario-ware type game requiring two players to work together on minigames that involve quick, action based challenges. Players use dynamic controls to complete the task at hand, forcing them to make quick judgement calls from the generated obstacles. </span>
                             </a>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Shake.jpg" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
-                            <a href="img/ShakeVideo.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 10px; text-decoration: none;">
-                                <span>I have worked with various arduino products, inluding the Arduino Uno, Circuit Playground Express, Raspberry PI and Raspberry Shake. I have also worked with machines like oscilloscopes, 3D and laser printers, and programs like LogicSim, and Ardunio IDE to implement various embedded systems and physical controllers.  </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/SearchingForJob.jpeg" alt="" style="z-index: 1">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
+                    <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
+                        <img class="img-fluid rounded w-100" src="img/SlipshodImage.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/app demo.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 12px; text-decoration: none";>
-                                <span> Job Search Application: Using MySQL and MariaDB, I worked with others to create a application that allows 
-                                    a user to search for a job. Using Relational Models, an ER diagram was created to visualise the 
-                                    usability for the user and developed through Queries. The program searches through a dataset with 
-                                    over 1.6 million rows and numerous table attributes with over one million tuples, and has functionality of; 
-                                    A login screen, three pipes possilbe for narrowed searching, along with favoriting and commenting functionalities.   </span>
+                            <a href="img/SlipshodVideo.mp4" class="fa text-white video-link"style="padding-left: 12px; text-decoration: none; display: block; width: 100%;">
+                                <span> A theme of 'narrative' and initial concept for a game was selected by class vote. I placed myself 
+                                    in the programming sector. Everyone had an area of focus - mine being a player programmer, 
+                                    which involved input systems and maps. We worked in weekly sprints. 
+                                    Each sector had to communicate to understand all aspects of the game and finalize how they should be implemented. 
+                                    I worked on other aspects such as event delegates and toggles, menu functionalities, and level programming aspects when able. 
+                                    Often, aspects of the player were tweaked weekly with input from other sectors being welcomed to create the game with every type of possible player in mind.
+                                </span>
                             </a>
                         </div>
                     </div>
                 </div>
-            -->
             <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                <div class="position-relative overflow-hidden mb-2" style="height: 350px;"> <!-- Adjust height as needed -->
+                <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
                     <img class="img-fluid rounded w-100" src="img/SearchingForJob.jpeg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
-                    <div id="text1" style="position: absolute; left: 0; top: 0; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                    </div>
                     <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="height: 80%; padding: 10px;">
-                        <a href="img/JobSearchVideo.mp4" data-lightbox="portfolio" class="fa text-white" style="padding-left: 12px; text-decoration: none; display: block; width: 100%;">
+                        <a href="img/JobSearchVideo.mp4" class="fa text-white video-link" style="padding-left: 12px; text-decoration: none; display: block; width: 100%;">
                             <span> Job Search Application: Using MySQL and MariaDB, I worked with others to create an app 
                                 using Relational Models, and ER diagrams to visualize the 
                                 usability for the user. Using SQL Queries, the program searches through a dataset with 
@@ -593,10 +589,8 @@
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
                         <img class="img-fluid rounded w-100" src="img/RecipeSearcher.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div>
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
-                            <a href="img/AzureRecipeVideo.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 12px; text-decoration: none; display: block; width: 100%;">
+                            <a href="img/AzureRecipeVideo.mp4" class="fa text-white video-link"style="padding-left: 12px; text-decoration: none; display: block; width: 100%;">
                                 <span> A website created with a classmate that allows a user to search for a recipe with ingredients in mind. There are 
                                 various methods to select what type of recipes are shown; with all ingredients listed, a mixture of ingredients, or by recipe title. 
                                 Each method searches through a database to find the recipes, and displays the vist of ingredients based on the input criteria. 
@@ -610,10 +604,8 @@
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
                         <img class="img-fluid rounded w-100" src="img/BlazorizeImage2.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
-                        <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                        </div> 
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/BlazorizeVideo.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 10px; text-decoration: none; display: block; width: 100%;">
+                            <a href="img/BlazorizeVideo.mp4" class="fa text-white video-link"style="padding-left: 10px; text-decoration: none; display: block; width: 100%;">
                                 <span> While working in my independent study I decided to work with Blazorize, a component for working within the Blazor language.
                                 I originally wanted to create a website that I could use for Amazon FBA, where I would attract customers to my website through 
                                 videos on other platforms to buy products they are interested in. From there they would be able to use my websites' 
@@ -625,21 +617,11 @@
                     </div>
                 </div>
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                        <div class="position-relative overflow-hidden mb-2" style="height: 350px;">
-                            <img class="img-fluid rounded w-100" src="img/SlipshodImage.jpg" alt="" style="z-index: 1; height: 100%; object-fit: cover;">
-                            <div id="text1" style="position: absolute; left: 0px; top: 0px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.8); z-index: 9999;">
-                            </div>
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/SlipshodVideo.mp4" data-lightbox="portfolio" class="fa text-white"style="padding-left: 12px; text-decoration: none; display: block; width: 100%;">
-                                    <span> A theme of 'narrative' and initial concept for a game was selected by class vote. I placed myself 
-                                        in the programming sector. Everyone had an area of focus - mine being a player programmer, 
-                                        which involved input systems and maps. We worked in weekly sprints. 
-                                        Each sector had to communicate to understand all aspects of the game and finalize how they should be implemented. 
-                                        I worked on other aspects such as event delegates and toggles, menu functionalities, and level programming aspects when able. 
-                                        Often, aspects of the player were tweaked weekly with input from other sectors being welcomed to create the game with every type of possible player in mind.
-                                    </span>
-                                </a>
-                            </div>
+                        <img class="img-fluid rounded w-100" src="img/Shake.jpg" alt="" style="z-index: 1">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"> 
+                            <a href="img/ShakeVideo.mp4" class="fa text-white video-link"style="padding-left: 10px; text-decoration: none;">
+                                <span>I have worked with various arduino products, inluding the Arduino Uno, Circuit Playground Express, Raspberry PI and Raspberry Shake. I have also worked with machines like oscilloscopes, 3D and laser printers, and programs like LogicSim, and Ardunio IDE to implement various embedded systems and physical controllers.  </span>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
@@ -672,18 +654,20 @@
                         -->
                     </div>
                 </div>
-            <!--
-            <div class="col-12 text-center mb-2">
-                <ul class="list-inline mb-4" id="portfolio-flters">
-                    <li class="btn btn-sm btn-outline-primary m-1" >Learn About My Process</li>-->
-                    <!--<li class="btn btn-sm btn-outline-primary m-1" >Learn About A Specific Project</li>
-                    <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
-                    <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
-                    <a href="" class="btn btn-outline-light mr-4">Download Resume</a>-->
-                    <!--</ul>-->
             </div>
+                <!--
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1" >Learn About My Process</li>-->
+                        <!--<li class="btn btn-sm btn-outline-primary m-1" >Learn About A Specific Project</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                        <a href="" class="btn btn-outline-light mr-4">Download Resume</a>-->
+                        <!--</ul>-->
+                </div>
         </div>
     </div>
+
     <!-- Portfolio End -->
 
 
@@ -846,6 +830,89 @@
         <!--</div>
     </div>-->
     <!-- Footer End -->
+
+    <!--
+
+    <div class="embed-responsive embed-responsive-16by9">
+        <video id="video" class="embed-responsive-item" controls autoplay muted>
+          <source id="videoSource" src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+        <a href="img/AzureRecipeVideo.mp4" class="fa text-white video-link" style="padding-left: 15px; text-decoration: none;">
+          <span>Another Video: Description of another video.</span>
+        </a>
+      </div>
+      
+      <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+        <a href="img/Dino.mp4" class="fa text-white video-link" style="padding-left: 15px; text-decoration: none;">
+          <span>Another Video: Description of another video.</span>
+        </a>
+      </div>
+      
+      <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+        <a href="img/PongVideo.mp4" class="fa text-white video-link" style="padding-left: 15px; text-decoration: none;">
+          <span>Another Video: Description of another video.</span>
+        </a>
+      </div>
+      
+    -->
+
+      <!-- Video Loader JS -->
+       <!---
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Get all the links with class 'video-link'
+          const videoLinks = document.querySelectorAll('.video-link');
+      
+          // Get the video element and its source
+          var video = document.getElementById('video');
+          var videoSource = document.getElementById('videoSource');
+      
+          if (!video) {
+            console.error('Video element not found.');
+            return;
+          }
+          if (!videoSource) {
+            console.error('Video source element not found.');
+            return;
+          }
+      
+          // Log video and source elements for debugging
+          console.log("Video element:", video);
+          console.log("Video source element:", videoSource);
+      
+          // Add event listeners to each video link
+          videoLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+              // Prevent default action (i.e., navigating to the link)
+              event.preventDefault();
+      
+              // Get the href value (video URL) from the clicked link
+              const videoSrc = link.getAttribute('href');
+              console.log("Video src: " + videoSrc);
+      
+              // Update the video source with the new video file
+              videoSource.setAttribute('src', videoSrc);
+              console.log("Video source updated to:", videoSrc);
+      
+              // Use setTimeout to allow the src change to apply
+              setTimeout(function () {
+                // Log the updated src to verify
+                console.log("Video source final:", videoSource.getAttribute('src'));
+      
+                // This will reload the video
+                
+                video.play();
+                console.log("Video loaded and playing.");
+              }, 100); // Delay to allow source change to take effect
+            });
+          });
+        });
+      </script>
+    -->
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>

@@ -19,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #0BCEAF;
+  --primary: #000000;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -472,11 +472,11 @@ h6, .h6 {
 
 .display-3 {
   font-size: 4.5rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.2;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1700px) {
   .display-3 {
     font-size: calc(1.575rem + 3.9vw) ;
   }
@@ -484,7 +484,7 @@ h6, .h6 {
 
 .display-4 {
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.2;
 }
 
